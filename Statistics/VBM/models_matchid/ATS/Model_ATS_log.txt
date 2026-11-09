@@ -1,0 +1,28 @@
+Model_ATS
+Thu Nov 27 12:14:32 2025
+
+Checking dataTable file:
+ATS.txt
+
+++Good: Table is regular and rectangular.
+
+Dimensions: 
+rows: 220 | columns: 8
+
+Data summary: 
+Variable          Detected_Type Details                                         
+Subj              Subjects      Num Subjects=220                                
+Substance         Categorical   Counts: ATS=111 | HC=109                        
+Database          Categorical   Unique levels=6                                 
+Age               Quantitative  Min=18 | Max=54 | Num outliers=12               
+Sex               Categorical   Counts: Sex_0=49 | Sex_1=171                    
+eTIV              Quantitative  Min=807.208 | Max=1969.104                      
+Total_Cerebel_Vol Quantitative  Min=0.05733595 | Max=0.1396761 | Num outliers=1 
+InputFile         Data          Number of InputFiles=220                        
+
+++ Good: All InputFiles exist.
+
+++ Good: All InputFiles have exactly 1 volume.
+
+++ Good: All InputFiles are on the same grid.
+

@@ -1,0 +1,13 @@
+Variables,.y.,n,statistic,df,p,method,p.adj,p.adj.signif
+Left.Crus.I,Values,3519,53.59973967681168,6,8.88e-10,Kruskal-Wallis,1.0656e-9,****
+eTIV,Values,3519,219.98732349390397,6,1.05e-44,Kruskal-Wallis,1.26e-43,****
+region_1,Values,3519,64.97187533729712,6,4.37e-12,Kruskal-Wallis,1.311e-11,****
+region_10,Values,3519,59.91215136352815,6,4.69e-11,Kruskal-Wallis,9.38e-11,****
+region_2,Values,3519,52.678548984785635,6,1.36e-9,Kruskal-Wallis,1.4836363636363635e-9,****
+region_3,Values,3519,79.00489775318897,6,5.73e-15,Kruskal-Wallis,3.438e-14,****
+region_4,Values,3519,39.60196427115089,6,5.45e-7,Kruskal-Wallis,5.45e-7,****
+region_5,Values,3519,65.31655771662592,6,3.72e-12,Kruskal-Wallis,1.311e-11,****
+region_6,Values,3519,56.10385774074394,6,2.77e-10,Kruskal-Wallis,3.6933333333333335e-10,****
+region_7,Values,3519,59.37674521041234,6,6.02e-11,Kruskal-Wallis,1.0319999999999999e-10,****
+region_8,Values,3519,57.078420857444364,6,1.76e-10,Kruskal-Wallis,2.64e-10,****
+region_9,Values,3519,63.31280403063277,6,9.53e-12,Kruskal-Wallis,2.2872e-11,****

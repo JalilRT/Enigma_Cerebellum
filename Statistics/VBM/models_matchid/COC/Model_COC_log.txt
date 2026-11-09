@@ -1,0 +1,28 @@
+Model_COC
+Thu Nov 27 12:15:02 2025
+
+Checking dataTable file:
+COC.txt
+
+++Good: Table is regular and rectangular.
+
+Dimensions: 
+rows: 766 | columns: 8
+
+Data summary: 
+Variable          Detected_Type Details                                          
+Subj              Subjects      Num Subjects=766                                 
+Substance         Categorical   Counts: COC=373 | HC=393                         
+Database          Categorical   Unique levels=13                                 
+Age               Quantitative  Min=17 | Max=75 | Num outliers=2                 
+Sex               Categorical   Counts: Sex_0=215 | Sex_1=551                    
+eTIV              Quantitative  Min=785.428 | Max=2047.705                       
+Total_Cerebel_Vol Quantitative  Min=0.07394185 | Max=0.1429587 | Num outliers=16 
+InputFile         Data          Number of InputFiles=766                         
+
+++ Good: All InputFiles exist.
+
+++ Good: All InputFiles have exactly 1 volume.
+
+++ Good: All InputFiles are on the same grid.
+

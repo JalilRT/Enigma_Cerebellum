@@ -1,0 +1,1 @@
+for d in ALC1 ALC2 ATS CANN COC COH NIC OPI; do for m in thickness volume meancurv area; do for o in aparc.a2009s aparc.DKTatlas; do for i in lh rh; do bash scripts/07_extract_metrics.sh $d $i $o $m; done; done; done; done

@@ -1,0 +1,356 @@
+================================================================
+  Cross-strategy VBM similarity — group: COC  (COC)
+  Date : Thu Jul  2 11:57:53 PM EDT 2026
+================================================================
+
+── Step 1: Extracting t-statistic maps (brick 5 of 3dLMEr) ──────────
+++ 3dbucket: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+  tstat_full.nii.gz created.
+++ 3dbucket: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+  tstat_match.nii.gz created.
+++ 3dbucket: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+  tstat_CC.nii.gz created.
+++ 3dbucket: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+  tstat_AI.nii.gz created.
+
+── Step 2: Binary significance masks from effect-size maps (cluster-corrected) ──
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/mask_full.nii.gz
+  mask_full.nii.gz created.
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/mask_match.nii.gz
+  mask_match.nii.gz created.
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/mask_CC.nii.gz
+  mask_CC.nii.gz created.
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/mask_AI.nii.gz
+  mask_AI.nii.gz created.
+  n_sig_clustcorr (full) = 320411       
+  n_sig_clustcorr (match) = 310760       
+  n_sig_clustcorr (CC) = 320164       
+  n_sig_clustcorr (AI) = 320411       
+
+── Step 2.5: Binary masks from t-values at p<0.05 uncorrected (flatmap) ──
+   Critical t-value: t_crit = 1.96
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/tstat_p05_mask_full.nii.gz
+  tstat_p05_mask_full.nii.gz created (|t| > 1.96).
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/tstat_p05_mask_match.nii.gz
+  tstat_p05_mask_match.nii.gz created (|t| > 1.96).
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/tstat_p05_mask_CC.nii.gz
+  tstat_p05_mask_CC.nii.gz created (|t| > 1.96).
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/tstat_p05_mask_AI.nii.gz
+  tstat_p05_mask_AI.nii.gz created (|t| > 1.96).
+  n_sig_uncorr_p05 (full) = 11839        
+  n_sig_uncorr_p05 (match) = 10548        
+  n_sig_uncorr_p05 (CC) = 12418        
+  n_sig_uncorr_p05 (AI) = 11903        
+
+── Step 3: Pearson r of continuous t-statistic maps ─────────────────
+   (3ddot -docoef; full-brain, all voxels within auto-mask)
+  r_tstat(full, match) = 
+  r_tstat(full, CC) = 
+  r_tstat(full, AI) = 
+  r_tstat(match, CC) = 
+  r_tstat(match, AI) = 
+  r_tstat(CC, AI) = 
+
+── Step 4: Dice coefficient of significant-voxel masks ─────────────
+  Dice(full, match) = 0.984709	
+  Dice(full, CC) = 0.999614	
+  Dice(full, AI) = 1	
+  Dice(match, CC) = 0.984623	
+  Dice(match, AI) = 0.984709	
+  Dice(CC, AI) = 0.999614	
+
+── Step 5: Jaccard index of significant-voxel masks ─────────────────
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/intersect_full_match.nii.gz
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/union_full_match.nii.gz
+  Jaccard(full, match) = .969879  [∩=310760       , ∪=320411       ]
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/intersect_full_CC.nii.gz
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/union_full_CC.nii.gz
+  Jaccard(full, CC) = .999229  [∩=320164       , ∪=320411       ]
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/intersect_full_AI.nii.gz
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/union_full_AI.nii.gz
+  Jaccard(full, AI) = 1.000000  [∩=320411       , ∪=320411       ]
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/intersect_match_CC.nii.gz
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/union_match_CC.nii.gz
+  Jaccard(match, CC) = .969710  [∩=310611       , ∪=320313       ]
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/intersect_match_AI.nii.gz
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/union_match_AI.nii.gz
+  Jaccard(match, AI) = .969879  [∩=310760       , ∪=320411       ]
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/intersect_CC_AI.nii.gz
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/union_CC_AI.nii.gz
+  Jaccard(CC, AI) = .999229  [∩=320164       , ∪=320411       ]
+
+── Step 6: η² (eta-squared) of effect-size maps ────────────────────
+  η²(full, match) = 0.931754	
+  η²(full, CC) = 0.992462	
+  η²(full, AI) = 0.999505	
+  η²(match, CC) = 0.933019	
+  η²(match, AI) = 0.933948	
+  η²(CC, AI) = 0.993146	
+
+── Step 7: Conjunction map (cluster-corrected) — all 4 strategies ───
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/conjunction_all4.nii.gz
+  conjunction_all4.nii.gz created.
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/conjunction_3of4.nii.gz
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/conjunction_all4_cohen_d.nii.gz
+  n_sig conjunction_clustcorr (all 4)    = 310611       
+  n_sig conjunction_clustcorr (≥3 of 4)  = 320313       
+
+── Step 7.5: Conjunction map (uncorrected p<0.05) — all 4 strategies ─
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/conjunction_all4_p05.nii.gz
+  conjunction_all4_p05.nii.gz created.
+  n_sig conjunction_p05_uncorr (all 4)   = 4113         
+
+── Step 7.7: Conjunction-masked t-value maps (for visualization) ────
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/tstat_conj_p05_full.nii.gz
+  tstat_conj_p05_full.nii.gz created (t-values at conjunction voxels).
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/tstat_conj_p05_match.nii.gz
+  tstat_conj_p05_match.nii.gz created (t-values at conjunction voxels).
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/tstat_conj_p05_CC.nii.gz
+  tstat_conj_p05_CC.nii.gz created (t-values at conjunction voxels).
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/tstat_conj_p05_AI.nii.gz
+  tstat_conj_p05_AI.nii.gz created (t-values at conjunction voxels).
+
+── Step 7.8: FDR-corrected t-values (voxelwise FDR q<0.05) ──────────
+   Note: FDR controls false discovery rate at voxel level (not cluster level)
+++ 3dFDR: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: B. Douglas Ward
+
+++ The 'new' method of FDR calculation is on by default; in particular:
+ + * Voxel p-values of exactly 1 (e.g., from t=0 or F=0 or correlation=0)
+ +   are ignored by default; in the old mode of operation, they were
+ +   included in the count which goes into the FDR algorithm.  The old
+ +   process tends to increase the q-values and so decrease the z-scores.
+ + * If you wish to do the FDR conversion using the old mode, use '-old'
+ +   on the command line.  For more information, use '3dFDR -help'.
+ + * If you don't want to see this message again, use the '-new' option.
+++ RWCox - 18 Jan 2008
+
+Computing sub-brick statistics
+Wrote output to /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/tstat_fdr_full.nii.gz
+  tstat_fdr_full.nii.gz created (q-values).
+  n_sig_fdr_q05 (full) = 
+++ 3dFDR: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: B. Douglas Ward
+
+++ The 'new' method of FDR calculation is on by default; in particular:
+ + * Voxel p-values of exactly 1 (e.g., from t=0 or F=0 or correlation=0)
+ +   are ignored by default; in the old mode of operation, they were
+ +   included in the count which goes into the FDR algorithm.  The old
+ +   process tends to increase the q-values and so decrease the z-scores.
+ + * If you wish to do the FDR conversion using the old mode, use '-old'
+ +   on the command line.  For more information, use '3dFDR -help'.
+ + * If you don't want to see this message again, use the '-new' option.
+++ RWCox - 18 Jan 2008
+
+Computing sub-brick statistics
+Wrote output to /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/tstat_fdr_match.nii.gz
+  tstat_fdr_match.nii.gz created (q-values).
+  n_sig_fdr_q05 (match) = 
+++ 3dFDR: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: B. Douglas Ward
+
+++ The 'new' method of FDR calculation is on by default; in particular:
+ + * Voxel p-values of exactly 1 (e.g., from t=0 or F=0 or correlation=0)
+ +   are ignored by default; in the old mode of operation, they were
+ +   included in the count which goes into the FDR algorithm.  The old
+ +   process tends to increase the q-values and so decrease the z-scores.
+ + * If you wish to do the FDR conversion using the old mode, use '-old'
+ +   on the command line.  For more information, use '3dFDR -help'.
+ + * If you don't want to see this message again, use the '-new' option.
+++ RWCox - 18 Jan 2008
+
+Computing sub-brick statistics
+Wrote output to /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/tstat_fdr_CC.nii.gz
+  tstat_fdr_CC.nii.gz created (q-values).
+  n_sig_fdr_q05 (CC) = 
+++ 3dFDR: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: B. Douglas Ward
+
+++ The 'new' method of FDR calculation is on by default; in particular:
+ + * Voxel p-values of exactly 1 (e.g., from t=0 or F=0 or correlation=0)
+ +   are ignored by default; in the old mode of operation, they were
+ +   included in the count which goes into the FDR algorithm.  The old
+ +   process tends to increase the q-values and so decrease the z-scores.
+ + * If you wish to do the FDR conversion using the old mode, use '-old'
+ +   on the command line.  For more information, use '3dFDR -help'.
+ + * If you don't want to see this message again, use the '-new' option.
+++ RWCox - 18 Jan 2008
+
+Computing sub-brick statistics
+Wrote output to /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/tstat_fdr_AI.nii.gz
+  tstat_fdr_AI.nii.gz created (q-values).
+  n_sig_fdr_q05 (AI) = 
+
+── Step 7.9: Cluster-correction on t-values (3dFWHMx + 3dClustSim) ──
+++ 3dFWHMx: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: The Bob
+++ Number of voxels in mask = 362289
+++ start ACF calculations out to radius = 5.79 mm
+ + ACF done (0.00 CPU s thus far)
+[7m** ERROR:[0m (FAILED) attempt to over-write file 3dFWHMx.1D
+++ ACF 1D file [radius ACF mixed_model gaussian_NEWmodel] written to 3dFWHMx.1D
+++ 1dplot: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: RWC et al.
+ + and 1dplot-ed to file 3dFWHMx.1D.png
+  FWHM estimated from tstat_full.
+  FWHM: x=1.98157, y=1.96771, z=1.84384
+++ 3dClustSim: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: RW Cox and BD Ward
+[7m*+ WARNING:[0m Use of -fwhm is not advised; consider using -acf instead
+           FMRI data does not have Gaussian-shaped smoothness!
+[7m** FATAL ERROR:[0m 3dClustSim -- unknown option '1.96771'
+** Program compile date = Apr 10 2026
+  3dClustSim completed; results in /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/clustsim_COC.txt.
+  [WARNING] Could not parse cluster threshold from 3dClustSim; using default=10.
+  Cluster threshold (NN=1, p<0.05): 10 voxels
+scripts/11_similarity_across_samples.sh: line 475: 3dClust: command not found
+  [WARNING] 3dClust output not found for full; skipping count.
+scripts/11_similarity_across_samples.sh: line 475: 3dClust: command not found
+  [WARNING] 3dClust output not found for match; skipping count.
+scripts/11_similarity_across_samples.sh: line 475: 3dClust: command not found
+  [WARNING] 3dClust output not found for CC; skipping count.
+scripts/11_similarity_across_samples.sh: line 475: 3dClust: command not found
+  [WARNING] 3dClust output not found for AI; skipping count.
+
+── Step 8: Voxelwise CoV / mean / stdev of Cohen's d ────────────────
+++ 3dTcat: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+[7m*+ WARNING:[0m Set TR of output dataset to 1.0 s
+++ elapsed time = 0.3 s
+  effectsize_4strat.nii.gz created.
+++ 3dTstat: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: KR Hammett & RW Cox
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/mean_effectsize.nii.gz
+++ 3dTstat: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: KR Hammett & RW Cox
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/stdev_effectsize.nii.gz
+++ 3dTstat: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: KR Hammett & RW Cox
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/cov_effectsize.nii.gz
+  Mean Cohen's d within conjunction mask  = 0.001573
+  Mean CoV    within conjunction mask     = 2.810114
+  Mean CoV    whole cerebellum (SUIT)     = 0.044563
+
+── Step 9: Sensitivity / Specificity vs. full-sample reference ──────
+  Sensitivity of match vs full = .969879  (310760       /320411       )
+  PPV         of match vs full = 1.000000  (310760       /310760       )
+  Sensitivity of CC vs full = .999229  (320164       /320411       )
+  PPV         of CC vs full = 1.000000  (320164       /320164       )
+  Sensitivity of AI vs full = 1.000000  (320411       /320411       )
+  PPV         of AI vs full = 1.000000  (320411       /320411       )
+
+── Step 10: Visualisation of conjunction map ─────────────────────────
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/conj_view/__tmp_chauf_G41HkCLa0qs/tmp_ulay.nii
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/conj_view/__tmp_chauf_G41HkCLa0qs/tmp_olay.nii
+++ 3dmaskdump: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Executing 3dcalc()
+ argv[0]=3dcalc argv[1]=-a argv[2]=/gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/scripts/SUIT.nii[0] argv[3]=-expr argv[4]=a argv[5]=-byte argv[6]=-session argv[7]=/tmp argv[8]=-prefix argv[9]=3dcalc_XYZ_6FiOtD_mofehX8PeC2EdnA argv[10]=-verbose
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Computing sub-brick 0
+++ Scaling output to type byte brick(s)
+++ Sub-brick 0 scale factor = 0.773308
+++ Computing output statistics
+++ Output dataset /tmp/3dcalc_XYZ_6FiOtD_mofehX8PeC2EdnA+orig.BRIK
+++ 1165365 voxels in the entire dataset (no mask)
+++ 1 voxels in the boxes and/or balls
+++ Using only the boxes+balls mask
++/gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/conj_view/__tmp_chauf_G41HkCLa0qs** ERROR: Table: no data in file
+** ERROR: Table: no data in file
+++ Writing one 1128x760 image to filter '/usr/bin/pnmtopng -compression 9 > /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/conj_view/COC_conj_all4.axi.png'
+++ Writing one 760x696 image to filter '/usr/bin/pnmtopng -compression 9 > /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/conj_view/COC_conj_all4.sag.png'
+++ Writing one 1128x696 image to filter '/usr/bin/pnmtopng -compression 9 > /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/conj_view/COC_conj_all4.cor.png'
+
+AFNI QUITTs!
+  Conjunction montage created.
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/mean_d_at_conjunction.nii.gz
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/conj_view/__tmp_chauf_2XanJspyanp/tmp_ulay.nii
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Output dataset /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/conj_view/__tmp_chauf_2XanJspyanp/tmp_olay.nii
+++ 3dmaskdump: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Executing 3dcalc()
+ argv[0]=3dcalc argv[1]=-a argv[2]=/gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/scripts/SUIT.nii[0] argv[3]=-expr argv[4]=a argv[5]=-byte argv[6]=-session argv[7]=/tmp argv[8]=-prefix argv[9]=3dcalc_XYZ_dmjQks-pDNSZwmczdDxCLw argv[10]=-verbose
+++ 3dcalc: AFNI version=AFNI_26.1.00 (Apr 10 2026) [64-bit]
+++ Authored by: A cast of thousands
+++ Computing sub-brick 0
+++ Scaling output to type byte brick(s)
+++ Sub-brick 0 scale factor = 0.773308
+++ Computing output statistics
+++ Output dataset /tmp/3dcalc_XYZ_dmjQks-pDNSZwmczdDxCLw+orig.BRIK
+++ 1165365 voxels in the entire dataset (no mask)
+++ 1 voxels in the boxes and/or balls
+++ Using only the boxes+balls mask
++/gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/conj_view/__tmp_chauf_2XanJspyanp** ERROR: Table: no data in file
+** ERROR: Table: no data in file
+++ Writing one 1128x760 image to filter '/usr/bin/pnmtopng -compression 9 > /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/conj_view/COC_mean_d.axi.png'
+++ Writing one 760x696 image to filter '/usr/bin/pnmtopng -compression 9 > /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/conj_view/COC_mean_d.sag.png'
+++ Writing one 1128x696 image to filter '/usr/bin/pnmtopng -compression 9 > /gpfs2/scratch/jrasgado/ENIGMA_Data_Transfer/Analysis_MRI_info/enigma/similarity_analysis/COC/conj_view/COC_mean_d.cor.png'
+
+AFNI QUITTs!
+[1]    Done                          Xvfb :115 -screen 0 1024x768x24
+
+Done: COC  Thu Jul  2 11:58:16 PM EDT 2026

@@ -1,0 +1,12 @@
+covariate,n_total,n_missing,pct_missing,action
+Age,3623,551,15.2,RETAIN
+Sex,3623,529,14.6,RETAIN
+Smoker_binary,3623,1583,43.7,RETAIN
+Handedness_numeric,3623,1125,31.1,RETAIN
+Education,3623,1614,44.5,RETAIN
+other_ALC,3623,662,18.3,RETAIN
+other_ATS,3623,662,18.3,RETAIN
+other_CANN,3623,662,18.3,RETAIN
+other_COC,3623,662,18.3,RETAIN
+other_NIC,3623,662,18.3,RETAIN
+other_OPI,3623,662,18.3,RETAIN

@@ -1,0 +1,28 @@
+Model_CANN
+Thu Nov 27 12:14:53 2025
+
+Checking dataTable file:
+CANN.txt
+
+++Good: Table is regular and rectangular.
+
+Dimensions: 
+rows: 546 | columns: 8
+
+Data summary: 
+Variable          Detected_Type Details                                          
+Subj              Subjects      Num Subjects=546                                 
+Substance         Categorical   Counts: CANN=274 | HC=272                        
+Database          Categorical   Unique levels=11                                 
+Age               Quantitative  Min=14 | Max=75 | Num outliers=10                
+Sex               Categorical   Counts: Sex_0=185 | Sex_1=361                    
+eTIV              Quantitative  Min=865.47 | Max=2135.754 | Num outliers=10      
+Total_Cerebel_Vol Quantitative  Min=0.06883834 | Max=0.1385209 | Num outliers=21 
+InputFile         Data          Number of InputFiles=546                         
+
+++ Good: All InputFiles exist.
+
+++ Good: All InputFiles have exactly 1 volume.
+
+++ Good: All InputFiles are on the same grid.
+

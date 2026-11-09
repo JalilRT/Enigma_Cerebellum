@@ -1,0 +1,15 @@
+rm *run* temp_*
+rm enigma/freesurfer/*/*txt
+module load freesurfer/freesurfer-6.0.0
+for d in ALC1 ALC2 ATS CANN COC COH NIC OPI; do for m in volume; do for o in aparc aparc.a2009s aparc.DKTatlas; do for i in lh rh; do bash scripts/07_extract_metrics.sh $d $i $o $m; done; done; done; done
+module load Rtidyverse/4.4.0
+Rscript scripts/join_volumes.R
+
+#sbatch scripts/sbatch_03-all_freesurfer_ICV_NA.sh ATS
+#sbatch scripts/sbatch_03-all_freesurfer_ICV_NA.sh COC
+#sbatch scripts/sbatch_03-all_freesurfer_ICV_NA.sh HC
+#sbatch scripts/sbatch_03-all_freesurfer_ICV_NA.sh NIC
+#sbatch scripts/sbatch_03-all_freesurfer_ICV_NA.sh OPI
+#sbatch scripts/sbatch_03-all_freesurfer_ICV_ALC.sh ALC1
+#sbatch scripts/sbatch_03-all_freesurfer_ICV_ALC.sh ALC2
+#sbatch scripts/sbatch_03-all_freesurfer_ICV_CANN.sh CANN

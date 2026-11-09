@@ -1,0 +1,10 @@
+Atlas,Variant,Sample Size,Databases
+Acapulco,CA (Covariate-Adjusted),2612,52
+MDTB,CA (Covariate-Adjusted),1685,50
+DK,CA (Covariate-Adjusted),1627,50
+Acapulco,CC (Complete Cases),2991,54
+MDTB,CC (Complete Cases),2991,54
+DK,CC (Complete Cases),2903,54
+Acapulco,AI (Alternative Imputation),3519,55
+MDTB,AI (Alternative Imputation),3519,55
+DK,AI (Alternative Imputation),3373,55

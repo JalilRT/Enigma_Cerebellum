@@ -1,0 +1,289 @@
+group metric strategy_pair value
+USERS n_sig_clustcorr full 334555       
+USERS n_sig_clustcorr match 324861       
+USERS n_sig_clustcorr CC 332735       
+USERS n_sig_clustcorr AI 334555       
+USERS n_sig_uncorr_p05 full 11618        
+USERS n_sig_uncorr_p05 match 9022         
+USERS n_sig_uncorr_p05 CC 9391         
+USERS n_sig_uncorr_p05 AI 11074        
+USERS pearsonr_tstat full_vs_match 
+USERS pearsonr_tstat full_vs_CC 
+USERS pearsonr_tstat full_vs_AI 
+USERS pearsonr_tstat match_vs_CC 
+USERS pearsonr_tstat match_vs_AI 
+USERS pearsonr_tstat CC_vs_AI 
+USERS dice full_vs_match 0.985299	
+USERS dice full_vs_CC 0.997273	
+USERS dice full_vs_AI 1	
+USERS dice match_vs_CC 0.986177	
+USERS dice match_vs_AI 0.985299	
+USERS dice CC_vs_AI 0.997273	
+USERS jaccard full_vs_match .971024
+USERS jaccard full_vs_CC .994559
+USERS jaccard full_vs_AI 1.000000
+USERS jaccard match_vs_CC .972730
+USERS jaccard match_vs_AI .971024
+USERS jaccard CC_vs_AI .994559
+USERS eta2 full_vs_match 0.870399	
+USERS eta2 full_vs_CC 0.986132	
+USERS eta2 full_vs_AI 0.998464	
+USERS eta2 match_vs_CC 0.88657	
+USERS eta2 match_vs_AI 0.875407	
+USERS eta2 CC_vs_AI 0.989162	
+USERS n_sig conjunction_all4_clustcorr 324253       
+USERS n_sig conjunction_3of4_clustcorr 333343       
+USERS n_sig conjunction_all4_p05_uncorr 4655         
+USERS n_sig_fdr_q05 full 
+USERS n_sig_fdr_q05 match 
+USERS n_sig_fdr_q05 CC 
+USERS n_sig_fdr_q05 AI 
+USERS mean_cohen_d_conjunction -0.002532
+USERS mean_cov_conjunction 3.905962
+USERS mean_cov_cerebellum 1.653400
+USERS sensitivity_vs_full match .971024
+USERS ppv_vs_full match 1.000000
+USERS sensitivity_vs_full CC .994559
+USERS ppv_vs_full CC 1.000000
+USERS sensitivity_vs_full AI 1.000000
+USERS ppv_vs_full AI 1.000000
+ALC n_sig_clustcorr full 322767       
+ALC n_sig_clustcorr match 319887       
+ALC n_sig_clustcorr CC 320151       
+ALC n_sig_clustcorr AI 322767       
+ALC n_sig_uncorr_p05 full 84090        
+ALC n_sig_uncorr_p05 match 70276        
+ALC n_sig_uncorr_p05 CC 67449        
+ALC n_sig_uncorr_p05 AI 76476        
+ALC pearsonr_tstat full_vs_match 
+ALC pearsonr_tstat full_vs_CC 
+ALC pearsonr_tstat full_vs_AI 
+ALC pearsonr_tstat match_vs_CC 
+ALC pearsonr_tstat match_vs_AI 
+ALC pearsonr_tstat CC_vs_AI 
+ALC dice full_vs_match 0.995519	
+ALC dice full_vs_CC 0.995931	
+ALC dice full_vs_AI 1	
+ALC dice match_vs_CC 0.991419	
+ALC dice match_vs_AI 0.995519	
+ALC dice CC_vs_AI 0.995931	
+ALC jaccard full_vs_match .991077
+ALC jaccard full_vs_CC .991895
+ALC jaccard full_vs_AI 1.000000
+ALC jaccard match_vs_CC .982984
+ALC jaccard match_vs_AI .991077
+ALC jaccard CC_vs_AI .991895
+ALC eta2 full_vs_match 0.988571	
+ALC eta2 full_vs_CC 0.985981	
+ALC eta2 full_vs_AI 0.997826	
+ALC eta2 match_vs_CC 0.975919	
+ALC eta2 match_vs_AI 0.990116	
+ALC eta2 CC_vs_AI 0.986801	
+ALC n_sig conjunction_all4_clustcorr 317273       
+ALC n_sig conjunction_3of4_clustcorr 322765       
+ALC n_sig conjunction_all4_p05_uncorr 60326        
+ALC n_sig_fdr_q05 full 
+ALC n_sig_fdr_q05 match 
+ALC n_sig_fdr_q05 CC 
+ALC n_sig_fdr_q05 AI 
+ALC mean_cohen_d_conjunction -0.036326
+ALC mean_cov_conjunction 1.421556
+ALC mean_cov_cerebellum 0.033893
+ALC sensitivity_vs_full match .991077
+ALC ppv_vs_full match 1.000000
+ALC sensitivity_vs_full CC .991895
+ALC ppv_vs_full CC 1.000000
+ALC sensitivity_vs_full AI 1.000000
+ALC ppv_vs_full AI 1.000000
+ATS n_sig_clustcorr full 315102       
+ATS n_sig_clustcorr match 295265       
+ATS n_sig_clustcorr CC 314940       
+ATS n_sig_clustcorr AI 315102       
+ATS n_sig_uncorr_p05 full 18605        
+ATS n_sig_uncorr_p05 match 15591        
+ATS n_sig_uncorr_p05 CC 19043        
+ATS n_sig_uncorr_p05 AI 18918        
+ATS pearsonr_tstat full_vs_match 
+ATS pearsonr_tstat full_vs_CC 
+ATS pearsonr_tstat full_vs_AI 
+ATS pearsonr_tstat match_vs_CC 
+ATS pearsonr_tstat match_vs_AI 
+ATS pearsonr_tstat CC_vs_AI 
+ATS dice full_vs_match 0.9675	
+ATS dice full_vs_CC 0.999743	
+ATS dice full_vs_AI 1	
+ATS dice match_vs_CC 0.967737	
+ATS dice match_vs_AI 0.9675	
+ATS dice CC_vs_AI 0.999743	
+ATS jaccard full_vs_match .937045
+ATS jaccard full_vs_CC .999485
+ATS jaccard full_vs_AI 1.000000
+ATS jaccard match_vs_CC .937490
+ATS jaccard match_vs_AI .937045
+ATS jaccard CC_vs_AI .999485
+ATS eta2 full_vs_match 0.922523	
+ATS eta2 full_vs_CC 0.999026	
+ATS eta2 full_vs_AI 0.999946	
+ATS eta2 match_vs_CC 0.922534	
+ATS eta2 match_vs_AI 0.923338	
+ATS eta2 CC_vs_AI 0.999041	
+ATS n_sig conjunction_all4_clustcorr 295259       
+ATS n_sig conjunction_3of4_clustcorr 314946       
+ATS n_sig conjunction_all4_p05_uncorr 7814         
+ATS n_sig_fdr_q05 full 
+ATS n_sig_fdr_q05 match 
+ATS n_sig_fdr_q05 CC 
+ATS n_sig_fdr_q05 AI 
+ATS mean_cohen_d_conjunction 0.016271
+ATS mean_cov_conjunction 2.972963
+ATS mean_cov_cerebellum 0.589777
+ATS sensitivity_vs_full match .937045
+ATS ppv_vs_full match 1.000000
+ATS sensitivity_vs_full CC .999485
+ATS ppv_vs_full CC 1.000000
+ATS sensitivity_vs_full AI 1.000000
+ATS ppv_vs_full AI 1.000000
+CANN n_sig_clustcorr full 319362       
+CANN n_sig_clustcorr match 305605       
+CANN n_sig_clustcorr CC 319213       
+CANN n_sig_clustcorr AI 319362       
+CANN n_sig_uncorr_p05 full 22115        
+CANN n_sig_uncorr_p05 match 11343        
+CANN n_sig_uncorr_p05 CC 22016        
+CANN n_sig_uncorr_p05 AI 22141        
+CANN pearsonr_tstat full_vs_match 
+CANN pearsonr_tstat full_vs_CC 
+CANN pearsonr_tstat full_vs_AI 
+CANN pearsonr_tstat match_vs_CC 
+CANN pearsonr_tstat match_vs_AI 
+CANN pearsonr_tstat CC_vs_AI 
+CANN dice full_vs_match 0.977988	
+CANN dice full_vs_CC 0.999767	
+CANN dice full_vs_AI 1	
+CANN dice match_vs_CC 0.978221	
+CANN dice match_vs_AI 0.977988	
+CANN dice CC_vs_AI 0.999767	
+CANN jaccard full_vs_match .956923
+CANN jaccard full_vs_CC .999533
+CANN jaccard full_vs_AI 1.000000
+CANN jaccard match_vs_CC .957370
+CANN jaccard match_vs_AI .956923
+CANN jaccard CC_vs_AI .999533
+CANN eta2 full_vs_match 0.927815	
+CANN eta2 full_vs_CC 0.999692	
+CANN eta2 full_vs_AI 0.999979	
+CANN eta2 match_vs_CC 0.928761	
+CANN eta2 match_vs_AI 0.927803	
+CANN eta2 CC_vs_AI 0.999654	
+CANN n_sig conjunction_all4_clustcorr 305605       
+CANN n_sig conjunction_3of4_clustcorr 319213       
+CANN n_sig conjunction_all4_p05_uncorr 7140         
+CANN n_sig_fdr_q05 full 
+CANN n_sig_fdr_q05 match 
+CANN n_sig_fdr_q05 CC 
+CANN n_sig_fdr_q05 AI 
+CANN mean_cohen_d_conjunction 0.011651
+CANN mean_cov_conjunction 2.216615
+CANN mean_cov_cerebellum 0.200512
+CANN sensitivity_vs_full match .956923
+CANN ppv_vs_full match 1.000000
+CANN sensitivity_vs_full CC .999533
+CANN ppv_vs_full CC 1.000000
+CANN sensitivity_vs_full AI 1.000000
+CANN ppv_vs_full AI 1.000000
+COC n_sig_clustcorr full 320411       
+COC n_sig_clustcorr match 310760       
+COC n_sig_clustcorr CC 320164       
+COC n_sig_clustcorr AI 320411       
+COC n_sig_uncorr_p05 full 11839        
+COC n_sig_uncorr_p05 match 10548        
+COC n_sig_uncorr_p05 CC 12418        
+COC n_sig_uncorr_p05 AI 11903        
+COC pearsonr_tstat full_vs_match 
+COC pearsonr_tstat full_vs_CC 
+COC pearsonr_tstat full_vs_AI 
+COC pearsonr_tstat match_vs_CC 
+COC pearsonr_tstat match_vs_AI 
+COC pearsonr_tstat CC_vs_AI 
+COC dice full_vs_match 0.984709	
+COC dice full_vs_CC 0.999614	
+COC dice full_vs_AI 1	
+COC dice match_vs_CC 0.984623	
+COC dice match_vs_AI 0.984709	
+COC dice CC_vs_AI 0.999614	
+COC jaccard full_vs_match .969879
+COC jaccard full_vs_CC .999229
+COC jaccard full_vs_AI 1.000000
+COC jaccard match_vs_CC .969710
+COC jaccard match_vs_AI .969879
+COC jaccard CC_vs_AI .999229
+COC eta2 full_vs_match 0.931754	
+COC eta2 full_vs_CC 0.992462	
+COC eta2 full_vs_AI 0.999505	
+COC eta2 match_vs_CC 0.933019	
+COC eta2 match_vs_AI 0.933948	
+COC eta2 CC_vs_AI 0.993146	
+COC n_sig conjunction_all4_clustcorr 310611       
+COC n_sig conjunction_3of4_clustcorr 320313       
+COC n_sig conjunction_all4_p05_uncorr 4113         
+COC n_sig_fdr_q05 full 
+COC n_sig_fdr_q05 match 
+COC n_sig_fdr_q05 CC 
+COC n_sig_fdr_q05 AI 
+COC mean_cohen_d_conjunction 0.001573
+COC mean_cov_conjunction 2.810114
+COC mean_cov_cerebellum 0.044563
+COC sensitivity_vs_full match .969879
+COC ppv_vs_full match 1.000000
+COC sensitivity_vs_full CC .999229
+COC ppv_vs_full CC 1.000000
+COC sensitivity_vs_full AI 1.000000
+COC ppv_vs_full AI 1.000000
+NIC n_sig_clustcorr full 319527       
+NIC n_sig_clustcorr match 312405       
+NIC n_sig_clustcorr CC 318758       
+NIC n_sig_clustcorr AI 319527       
+NIC n_sig_uncorr_p05 full 17619        
+NIC n_sig_uncorr_p05 match 31788        
+NIC n_sig_uncorr_p05 CC 17420        
+NIC n_sig_uncorr_p05 AI 17582        
+NIC pearsonr_tstat full_vs_match 
+NIC pearsonr_tstat full_vs_CC 
+NIC pearsonr_tstat full_vs_AI 
+NIC pearsonr_tstat match_vs_CC 
+NIC pearsonr_tstat match_vs_AI 
+NIC pearsonr_tstat CC_vs_AI 
+NIC dice full_vs_match 0.98873	
+NIC dice full_vs_CC 0.998795	
+NIC dice full_vs_AI 1	
+NIC dice match_vs_CC 0.987887	
+NIC dice match_vs_AI 0.98873	
+NIC dice CC_vs_AI 0.998795	
+NIC jaccard full_vs_match .977710
+NIC jaccard full_vs_CC .997593
+NIC jaccard full_vs_AI 1.000000
+NIC jaccard match_vs_CC .976064
+NIC jaccard match_vs_AI .977710
+NIC jaccard CC_vs_AI .997593
+NIC eta2 full_vs_match 0.892665	
+NIC eta2 full_vs_CC 0.992225	
+NIC eta2 full_vs_AI 0.999805	
+NIC eta2 match_vs_CC 0.888034	
+NIC eta2 match_vs_AI 0.893961	
+NIC eta2 CC_vs_AI 0.99178	
+NIC n_sig conjunction_all4_clustcorr 311759       
+NIC n_sig conjunction_3of4_clustcorr 319404       
+NIC n_sig conjunction_all4_p05_uncorr 9682         
+NIC n_sig_fdr_q05 full 
+NIC n_sig_fdr_q05 match 
+NIC n_sig_fdr_q05 CC 
+NIC n_sig_fdr_q05 AI 
+NIC mean_cohen_d_conjunction 0.018154
+NIC mean_cov_conjunction 4.762157
+NIC mean_cov_cerebellum 0.672366
+NIC sensitivity_vs_full match .977710
+NIC ppv_vs_full match 1.000000
+NIC sensitivity_vs_full CC .997593
+NIC ppv_vs_full CC 1.000000
+NIC sensitivity_vs_full AI 1.000000
+NIC ppv_vs_full AI 1.000000

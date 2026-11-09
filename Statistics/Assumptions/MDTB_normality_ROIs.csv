@@ -1,0 +1,16 @@
+vars,statistic,p_value,sample
+Control,0.818,0,3519
+Age,0.929,0,3519
+Corpus.Medullare,0.9527,0,3519
+Left.Crus.I,0.9773,0,3519
+eTIV,0.9789,0,3519
+region_1,0.9852,0,3519
+region_2,0.9622,0,3519
+region_3,0.9272,0,3519
+region_4,0.9951,0,3519
+region_5,0.869,0,3519
+region_6,0.9071,0,3519
+region_7,0.9382,0,3519
+region_8,0.9807,0,3519
+region_9,0.998,2e-4,3519
+region_10,0.9752,0,3519

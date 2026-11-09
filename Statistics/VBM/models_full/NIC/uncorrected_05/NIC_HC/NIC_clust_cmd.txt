@@ -1,0 +1,7 @@
+3dClusterize                                  \
+    -NN 1 -clust_nvox 13                              \
+    -idat 5                         \
+    -ithr 5                         \
+    -bisided -1.959964 1.959964                         \
+    -pref_map uncorrected_05/NIC_HC/__tmp_chauf_oNI6jtwsrtH/olay_clust.nii      \
+    -inset  Model_NIC.nii.gz
